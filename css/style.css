@@ -1,0 +1,209 @@
+/* font-family: 'Roboto Mono', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --white: #f7f7f7;
+    --orange: #ea8a00;
+    --red: #fe3a30;
+    --green: #01e068;
+    --grey: #29292b;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white);
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    max-height: 700px;
+    width: 80%;
+}
+
+.wrapper h1.title {
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+div.timer {
+    flex-grow: 1;
+    margin-top: 2rem;
+}
+
+.timer .stopwatch {
+    font-size: 3rem;
+    border-bottom: 2px solid var(--grey);
+}
+
+.timer ul {
+    list-style: none;
+    color: var(--grey);
+    margin-top: 0.5rem;
+}
+
+.timer ul li {
+    border-bottom: 1px solid var(--grey);
+    padding: 0.4rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+button.lap {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: var(--orange);
+}
+
+div.btns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+div.btns button {
+    flex-basis: 40%;
+    padding: 1rem 2rem;
+}
+
+.reset {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.start-stop {
+    background-color: var(--green);
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    div.wrapper {
+        height: 85%;
+        width: 80%;
+    }
+
+    .wrapper .time {
+        font-size: 2rem;
+    }
+
+    .wrapper h1.title {
+        font-size: 3rem;
+    }
+
+    div.timer {
+        margin-top: 1rem;
+    }
+
+    .timer .stopwatch {
+        font-size: 5rem;
+    }
+
+    .timer ul li {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+    }
+
+    button.lap {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.wrapper {
+        height: 95%;
+        width: 90%;
+    }
+
+    .wrapper .time {
+        font-size: 2rem;
+    }
+
+    .wrapper h1.title {
+        font-size: 2rem;
+    }
+
+    div.timer {
+        margin-top: 0.5rem;
+    }
+
+    .timer .stopwatch {
+        font-size: 4rem;
+    }
+
+    .timer ul li {
+        font-size: 1rem;
+    }
+
+    div.btns {
+        width: 60%;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    button.lap {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    div.wrapper {
+        max-height: 900px;
+    }
+    .wrapper .time {
+        font-size: 3rem;
+    }
+
+    .wrapper h1.title {
+        font-size: 4rem;
+    }
+
+    div.timer {
+        margin-top: 0.5rem;
+    }
+
+    .timer .stopwatch {
+        font-size: 5.5rem;
+    }
+
+    .timer ul li {
+        font-size: 1rem;
+    }
+
+    div.btns {
+        width: 60%;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    button.lap {
+        font-size: 2rem;
+    }
+}
