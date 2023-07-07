@@ -54,6 +54,19 @@ div.timer {
     list-style: none;
     color: var(--grey);
     margin-top: 0.5rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 0.5rem;
 }
 
 .timer ul li {
@@ -119,7 +132,6 @@ div.btns button {
     button {
         font-size: 1.6rem;
     }
-
 }
 
 @media (min-width: 1024px) {
